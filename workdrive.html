@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkDrive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="work-drive.css" />
+    <script src="workdrive.js" defer></script>
+    <!-- <script src="loctionFinder.js" defer></script> -->
+  </head>
+  <body>
+    <!-- ------ navigation bar ----- -->
+
+    <header class="menu">
+      <div class="menu-left">
+        <img
+          src="assets/workdrive-icon.png"
+          alt=""
+          width="44px"
+          height="44px"
+        />
+        <a href="#">WorkDrive</a>
+      </div>
+      <div class="menu-right">
+        <ul class="menu-nav">
+          <li>
+            <span>Features</span>
+            <img
+              class="down-icon"
+              src="assets/icons8-sort-down-24.png"
+              alt=""
+            />
+            <ul class="submenu sbm-1">
+              <li><a href="#">Team Folders</a></li>
+              <li><a href="#">Office Editors </a></li>
+              <li><a href="#">Smart Search</a></li>
+              <li><a href="#">Data Templates </a></li>
+              <li><a href="#">Collect Files</a></li>
+              <li><a href="#">Admin Console</a></li>
+              <li><a href="#">Security</a></li>
+              <li><a href="#">Mobile Apps </a></li>
+              <li><a href="#">WorkDrive Genie </a></li>
+              <li><a href="#">WorkDrive TrueSync </a></li>
+              <li><a href="#">WorkDrive Sync </a></li>
+              <li><a href="#">GDPR Compliance </a></li>
+              <li><a href="#">HIPAA Compliance </a></li>
+              <li><a class="active-link" href="#">All Features </a></li>
+            </ul>
+          </li>
+          <li>Pricing</li>
+          <li>
+            <span>Solutions</span>
+            <img
+              class="down-icon"
+              src="assets/icons8-sort-down-24.png"
+              alt=""
+            />
+            <ul class="submenu sbm-2">
+              <li class="sbm-li">
+                <a href="#">Function </a>
+                <span class="right-icon"></span>
+                <ul class="submenu-in in-view sbm-in-1">
+                  <li><a href="#">Legal</a></li>
+                  <li><a href="#">Finance</a></li>
+                  <li><a href="#">Marketing</a></li>
+                  <li><a href="#">Operations</a></li>
+                  <li><a href="#">Human Resources</a></li>
+                  <li><a href="#">Research and Development</a></li>
+                </ul>
+              </li>
+              <li class="sbm-li">
+                <a href="#">Industry</a>
+                <span class="right-icon"></span>
+                <ul class="submenu-in in-view sbm-in-2">
+                  <li><a href="#">Training</a></li>
+                  <li><a href="#">Manufacturing</a></li>
+                  <li><a href="#">Healthcare</a></li>
+                  <li><a href="#">Legal</a></li>
+                  <li><a href="#">Real Estate</a></li>
+                  <li><a href="#">IT</a></li>
+                  <li><a href="#">Telecom</a></li>
+                  <li><a href="#">Retail</a></li>
+                  <li><a href="#">Labs</a></li>
+                </ul>
+              </li>
+              <li class="sbm-li">
+                <a href="#">Size</a>
+                <span class="right-icon"></span>
+                <ul class="submenu-in in-view sbm-in-3">
+                  <li><a href="#">Individuals</a></li>
+                  <li><a href="#">Startups</a></li>
+                  <li><a href="#">Small and Medium Businesses</a></li>
+                  <li><a href="#">EnterPrises</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>Customers</li>
+          <li>
+            <span>Add-ons</span>
+            <img
+              class="down-icon"
+              src="assets/icons8-sort-down-24.png"
+              alt=""
+            />
+            <ul class="submenu sbm-3">
+              <li><a href="#">Microsoft add-on</a></li>
+              <li><a href="#">Gmail Add-on</a></li>
+              <li><a href="#">Zapier</a></li>
+            </ul>
+          </li>
+          <li>
+            <span>Resources</span>
+            <img
+              class="down-icon"
+              src="assets/icons8-sort-down-24.png"
+              alt=""
+            />
+            <ul class="submenu sbm-4">
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">User Guide</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">How-to-videos</a></li>
+              <li><a href="#">Webinar</a></li>
+              <li><a href="#">What's New</a></li>
+              <li><a href="#">Digest</a></li>
+              <li><a href="#">Developer APIs</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ------ sticky navigation bar ----- -->
+
+    <div id="sticky-navbar">
+      <header class="sticky-header">
+        <div class="menu-left">
+          <img
+            class="zoho-icon"
+            src="assets/zoho-logo.png"
+            alt=""
+            width="44px"
+            height="44px"
+          />
+          <a style="font-weight: bold" href="#">WorkDrive</a>
+        </div>
+        <div class="menu-right">
+          <ul class="menu-nav">
+            <li>
+              <span>Features</span>
+              <img
+                class="down-icon"
+                src="assets/icons8-sort-down-24.png"
+                alt=""
+              />
+              <ul class="submenu sbm-1">
+                <li><a href="#">Team Folders</a></li>
+                <li><a href="#">Office Editors </a></li>
+                <li><a href="#">Smart Search</a></li>
+                <li><a href="#">Data Templates </a></li>
+                <li><a href="#">Collect Files</a></li>
+                <li><a href="#">Admin Console</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Mobile Apps </a></li>
+                <li><a href="#">WorkDrive Genie </a></li>
+                <li><a href="#">WorkDrive TrueSync </a></li>
+                <li><a href="#">WorkDrive Sync </a></li>
+                <li><a href="#">GDPR Compliance </a></li>
+                <li><a href="#">HIPAA Compliance </a></li>
+                <li><a class="active-link" href="#">All Features </a></li>
+              </ul>
+            </li>
+            <li>Pricing</li>
+            <li>
+              <span>Solutions</span>
+              <img
+                class="down-icon"
+                src="assets/icons8-sort-down-24.png"
+                alt=""
+              />
+              <ul class="submenu sbm-2">
+                <li class="sbm-li">
+                  <a href="#">Function </a>
+                  <span class="right-icon"></span>
+                  <ul class="submenu-in in-view sbm-in-1">
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Finance</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Operations</a></li>
+                    <li><a href="#">Human Resources</a></li>
+                    <li><a href="#">Research and Development</a></li>
+                  </ul>
+                </li>
+                <li class="sbm-li">
+                  <a href="#">Industry</a>
+                  <span class="right-icon"></span>
+                  <ul class="submenu-in in-view sbm-in-2">
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Manufacturing</a></li>
+                    <li><a href="#">Healthcare</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Real Estate</a></li>
+                    <li><a href="#">IT</a></li>
+                    <li><a href="#">Telecom</a></li>
+                    <li><a href="#">Retail</a></li>
+                    <li><a href="#">Labs</a></li>
+                  </ul>
+                </li>
+                <li class="sbm-li">
+                  <a href="#">Size</a>
+                  <span class="right-icon"></span>
+                  <ul class="submenu-in in-view sbm-in-3">
+                    <li><a href="#">Individuals</a></li>
+                    <li><a href="#">Startups</a></li>
+                    <li><a href="#">Small and Medium Businesses</a></li>
+                    <li><a href="#">EnterPrises</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Customers</li>
+            <li>
+              <span>Add-ons</span>
+              <img
+                class="down-icon"
+                src="assets/icons8-sort-down-24.png"
+                alt=""
+              />
+              <ul class="submenu sbm-3">
+                <li><a href="#">Microsoft add-on</a></li>
+                <li><a href="#">Gmail Add-on</a></li>
+                <li><a href="#">Zapier</a></li>
+              </ul>
+            </li>
+            <li>
+              <span>Resources</span>
+              <img
+                class="down-icon"
+                src="assets/icons8-sort-down-24.png"
+                alt=""
+              />
+              <ul class="submenu sbm-4">
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">User Guide</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">How-to-videos</a></li>
+                <li><a href="#">Webinar</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Digest</a></li>
+                <li><a href="#">Developer APIs</a></li>
+                <li><a href="#">FAQs</a></li>
+              </ul>
+            </li>
+            <li>Contact Us</li>
+            <li><a class="head-signup-btn" href="#">Get Started</a></li>
+          </ul>
+        </div>
+      </header>
+    </div>
+
+    <!-- ------ head section ----- -->
+   
+    <section class="head-section">
+      <div>
+        <h1>Online file management for teams that work together</h1>
+        <p>
+          Transform the way your team works together—give them a secure, shared
+          workspace, so their ideas have a home from conception to realization.
+          Create, collaborate, and make teamwork happen.
+        </p>
+        <div class="head-content">
+          <a class="head-link" href="#">Sign up for free</a>
+          <a class="head-link" href="#">Contact Sales</a>
+          <div class="hd-ctn-1">
+          
+            <img src="assets/play-icon (2).png" alt="">
+            <span>Watch video</span>
+          </div>
+          <p>
+            <a href="#">Get WorkDrive for Individuals</a>
+          </p>
+        </div>
+      </div>
+      <div class="head-right-img">
+        
+        <video width="500" autoplay muted loop>
+        <source src="assets/home-bnr-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- ------ features section ----- -->
+
+    <section class="features-section">
+      <div class="bg-1">
+        <span class="bg-1-arrow"></span>
+      </div>
+      <div class="features-main">
+        <h2>Introducing a new way for teams to work together</h2>
+        <div class="features-acc">
+          <div class="features-img-box ">
+            <div class="features-img feat-img-1 feat-img-active">
+             <img src="assets/work-as-a-team.png" alt="" width="560px" />
+            </div>
+            <div class="features-img feat-img-2 ">
+              <img src="assets/administer-your-team.png" alt="" width="560px" />
+            </div>
+            <div class="features-img feat-img-3">
+              <img src="assets/security-you-can-trust.png" alt="" width="560px" />
+              <img class="security-lock" src="assets/security-you-can-trust-lock.svg" alt="">
+            </div>
+          </div>
+          <div class="features-ctn">
+            <ul>
+              <li class="features-btn  features-btn-active">
+                <h3>Work as a team</h3>
+                <p>
+                  Give your team a shared space to store, organize, and manage
+                  files to ensure seamless collaboration.
+                </p>
+                <a class="know-more" href="#">Read more</a>
+              </li>
+              <li class="features-btn">
+                <h3>Administer your team</h3>
+                <p>
+                  Understand your team better with customizable reports
+                  including file access stats, audit trails, and more.
+                </p>
+                <a class="know-more" href="#">Read more</a>
+              </li>
+              <li class="features-btn">
+                <h3>Security you can trust</h3>
+                <p>
+                  Zoho WorkDrive meets industry-specific compliance standards such as SOC 2 Type II and ISO 27001 to ensure your data is always protected.
+                </p>
+                <a class="know-more" href="#">Read more</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ office section ----- -->
+
+    <section class="office-section">
+      <div class="office-container">
+        <h2>Create. Edit. Share.</h2>
+        <div class="office-box">
+          <img
+            class="office-img-rocket"
+            src="assets/create-edit-share-rocket.png"
+            alt=""
+          />
+          <img class="office-img" src="assets/create-edit-share.png" alt="" />
+          <svg class="stroke" width="600" height="600">
+            <path class="path" id="curve" d="M100,250 C100,40 500,40 520,250"></path>
+          </svg>
+          <div class="office-cont">
+            <h4>Zoho Office Suite</h4>
+            <p>
+              Shape your ideas, together. Brainstorm with your team in real time
+              using Zoho Office Suite.
+            </p>
+            <ul>
+              <li>
+                <img class="office-li-icon" src="assets/write.png" alt="" />
+                <span>Writer</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="office-icon-arrow"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </li>
+              <li>
+                <img class="office-li-icon" src="assets/sheet.png" alt="" />
+                <span>Sheet</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="office-icon-arrow"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </li>
+              <li>
+                <img class="office-li-icon" src="assets/play.png" alt="" />
+                <span>Show</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="office-icon-arrow"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ price section ----- -->
+    <section class="price-section-full">
+      <div class="price-section">
+        <h2>Pricing that scales with your business</h2>
+        <div class="price-container">
+          <div class="price-box">
+            <span class="box-title">starter</span>
+            <span class="box-price-symbol">₹</span
+            ><span class="box-price">140</span>
+            <p>/user/month billed annually</p>
+            <ul>
+              <li>1 GB file upload limit</li>
+              <li>Storage starts at 1 TB/Team</li>
+              <li>
+                After 10 users, get additional shared storage of 100 GB/new user
+              </li>
+            </ul>
+          </div>
+          <div class="price-box box-2">
+            <span class="box-title">team</span>
+            <span class="box-price-symbol">₹</span
+            ><span class="box-price">275</span>
+            <p>/user/month billed annually</p>
+            <ul>
+              <li>5 GB file upload limit</li>
+              <li>Storage starts at 3 TB/Team</li>
+              <li>
+                After 10 users, get additional shared storage of 300 GB/new user
+              </li>
+            </ul>
+          </div>
+          <div class="price-box box-3">
+            <span class="box-title">business</span>
+            <span class="box-price-symbol">₹</span
+            ><span class="box-price">550</span>
+            <p>/user/month billed annually</p>
+            <ul>
+              <li>50 GB file upload limit</li>
+              <li>Storage starts at 5 TB/Team</li>
+              <li>
+                After 10 users, get additional shared storage of 500 GB/new user
+              </li>
+            </ul>
+          </div>
+          <a class="know-more" href="#">View pricing page</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ rating section ----- -->
+    <section class="rating price-section">
+      <h2> <span> Highly rated by</span> <span>both critics and users</span> </h2>
+      <div class="rating-container">
+        <div>
+          <div class="rating-cont-1">
+            <img class="rat-award-img-1" src="assets/shortlist.png" alt="" />
+            <p>
+              Constellation ShortList™ - Enterprise File Sharing and Cloud
+              Content Management
+            </p>
+          </div>
+          <div class="rating-cont-1">
+            <img class="rat-award-img-2" src="assets/leader-spring.png" alt="" />
+            <p>G2 - Leader Spring 2022</p>
+          </div>
+        </div>
+        <div>
+          <div class="rating-show">
+          <div class="rating--1">
+            <img src="assets/appstore.png" alt="" />
+            <span class="stars-container stars-48"> ★★★★★</span>
+            <span id="rating-48" class="rat-num-1">4.8</span>
+            <span class="rat-num-2">/ 5</span>
+          </div>
+          <div class="rating--1">
+            <img src="assets/capterra.png" alt="" />
+            <span class="stars-container stars-48"> ★★★★★</span>
+            <span id="rating-45-1" class="rat-num-1">4.5</span>
+            <span class="rat-num-2">/ 5</span>
+          </div>
+          <div class="rating--1">
+            <img src="assets/getapp.png" alt="" />
+            <span class="stars-container stars-45"> ★★★★★</span>
+            <span id="rating-45-2" class="rat-num-1">4.5</span>
+            <span class="rat-num-2">/ 5</span>
+          </div>
+          <div class="rating--1">
+            <img src="assets/google-play.png" alt="" />
+            <span class="stars-container stars-45"> ★★★★★</span>
+            <span id="rating-45-3" class="rat-num-1">4.5</span>
+            <span class="rat-num-2">/ 5</span>
+          </div>
+          <div class="rating--1">
+            <img src="assets/peer-insights.png" alt="" />
+            <span class="stars-container stars-44"> ★★★★★</span>
+            <span id="rating-44" class="rat-num-1">4.4</span>
+            <span class="rat-num-2">/ 5</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ business section ----- -->
+    <section class="business-section">
+      <div class="price-section">
+        <h2>A file management and collaboration solution that suits any</h2>
+        <div class="business-container">
+          <div class="suite   suite--1">
+            <span>Team</span>
+            <ul >
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Finance</a></li>
+              <li><a href="#">Marketing</a></li>
+              <li><a href="#">Operations</a></li>
+              <li><a href="#">HR</a> </li>
+              <li><a href="#">R&D</a></li>
+            </ul>
+          </div>
+          <div class="suite  suite--1">
+            <span>Industry</span>
+            <ul>
+              <li><a href="#">Training</a></li>
+              <li><a href="#">Manufacturing</a></li>
+              <li><a href="#">Healthcare</a> </li>
+              <li><a href="#">Legal</a></li>
+              <li><a href="#">Real Estate</a></li>
+              <li><a href="#">IT</a></li>
+              <li><a href="#">Telecom</a></li>
+              <li><a href="#">Retail</a></li>
+              <li><a href="#">Labs</a></li>
+            </ul>
+          </div>
+          <div class="suite  suite--1">
+            <span>Business size</span>
+            <ul>
+              <li> <a href="#">Individuals</a></li>
+              <li> <a href="#">Startups</a></li>
+              <li> <a href="#">SMBs</a></li>
+              <li><a href="#">Enterprise</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ marketing section ----- -->
+    <section class="marketing-section">
+      <div class="Marketing-container">
+        <h2>Always available</h2>
+        <p>
+          A file management and collaboration solution that suits any team,
+          industry, business size.
+        </p>
+        <div class="market-cont">
+          <div class="market-cont-1">
+            <div class="grid-anim-box">
+              <header>
+                <img class="cloud" src="assets/home-features-sprite-2x (1).png" alt="" />
+                <span class="syncing">Syncing</span>
+                <span class="synced">Synced</span>
+                <img class="sync" src="assets/home-features-sprite-2x (2).png" alt="" />
+                <svg class="sync-tick" width="16px" height="16px" viewBox="0 0 245 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="5" fill="none" fill-rule="evenodd" stroke-opacity="1"><polyline id="tickmark" stroke="#6AA121" stroke-width="40" points="5.640625 83.7607422 83.2539062 161.663086 238.97168 6.11328125"></polyline></g></svg>
+              </header>
+              
+              <div class="grid-cont">
+                  <div class="fade-cont"> 
+                   <img class="grid-img" src="assets/syncimg1 (1).jpg" alt="" />
+                   <span class="fade-box"></span>
+                  </div>
+                  <div class="fade-cont"> 
+                   <img  class="grid-img" src="assets/sheet-icon.svg" alt="" /> 
+                   <span class="fade-box fade-box-1"></span> 
+                  </div>
+                  <div class="fade-cont"> 
+                   <img  class="grid-img"src="assets/syncimg2.jpg" alt="" />
+                   <span class="fade-box fade-box-2"></span>  
+                  </div>
+                  <div class="fade-cont">
+                    <img  class="grid-img"src="assets/workdrive-icon.svg" alt="" />
+                    <span class="fade-box "></span>  
+                  </div>
+                  <div class="fade-cont"> 
+                   <img  class="grid-img"src="assets/pdf-icon.svg" alt="" /> 
+                   <span class="fade-box fade-box-1"></span> 
+                  </div>
+                  <div class="fade-cont"> 
+                   <img  class="grid-img"src="assets/syncimg3.jpg" alt="" /> 
+                   <span class="fade-box fade-box-2"></span> 
+                  </div>
+                  <div class="fade-cont"> 
+                   <img  class="grid-img"src="assets/play-icon.svg" alt="" /> 
+                   <span class="fade-box fade-box-1"></span> 
+                  </div>
+                  <div class="fade-cont">
+                    <img  class="grid-img"src="assets/writer-icon.svg" alt="" />
+                    <span class="fade-box fade-box-2"></span> 
+                  </div>
+              </div>
+            </div> 
+            <p>Back up your team files offline. Always synced and always available.</p>
+            <p> <a class="btn" href="#">Download</a></p>
+        </div>
+        <div class="market-cont-2">
+          <img class="market-img" src="assets/mobile-apps.jpg" alt="">
+          <p>Download Zoho WorkDrive for your smartphone and tablet.</p>
+          <p><a href="#"><img src="assets/dwn-appStore.png" alt=""></a>
+            <a href="#"><img src="assets/dwn-googleplay.png" alt=""></a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------ testimonial section ----- -->
+    <section class="testimonial-section">
+      <div class="testimonial-container">
+         <h4>Our customers are working</h4>
+         <h4>wonders with Zoho WorkDrive</h4>
+          <div class="author-container">
+            <div id="slide-1" class="author-cont mySlides slide-active">
+              <p>“We use Zoho WorkDrive to share documents in our team. These Zoho Office documents are easy to access and edit. We can spontaneously share the latest documents in real-time. Zoho WorkDrive enables rapid communication between our team members. We recommend Zoho WorkDrive for every Zoho user!”</p>
+              <div class="author-details">
+                <img src="assets/katsuhiro.png" alt="">
+                <div>
+                  <span>Ryosuke Hino</span>
+                  <span>Director of Hino Dermatology Clinic</span>
+                </div>
+              </div>
+           </div>
+           <div  class="author-cont mySlides ">
+            <p>“Zoho WorkDrive allows us to have a single repository for everything we're working on which makes us more organised. In fact it is more reliable and easier to use than Google Drive for Teams.”</p>
+            <div class="author-details">
+              <img src="assets/workdrive-testimonial-1.jpg" alt="">
+              <div>
+                <span>Jamie Lupton</span>
+                <span>Managing Director, Alfafado Ltd.</span>
+              </div>
+            </div>
+         </div>
+         <div class="author-cont mySlides ">
+          <p>“Zoho WorkDrive has really simplified sharing and providing permission to my team members. It has an intuitive UI and it helps even the technologically challenged members of my team to easily get started.”</p>
+          <div class="author-details">
+            <img src="assets/workdrive-testimonial-2.jpg" alt="">
+            <div>
+              <span>Andrew Blades</span>
+              <span>VP, Road Rescue</span>
+            </div>
+          </div>
+       </div>
+       <div class="author-cont mySlides ">
+        <p>“WorkDrive is a big data solution because, by focusing on teams, it gives a greater push to meet the organizational and corporate objectives of the company I work for. I recommend it more than Google Drive, by far”</p>
+        <div class="author-details">
+          <img src="assets/esteban-rojas.png" alt="">
+          <div>
+            <span>Esteban Rojas</span>
+            <span>SeguroInteligente.mx</span>
+          </div>
+        </div>
+     </div>
+            <!-- <ul>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+            </ul> -->
+            <span onclick="plusSlides(-1)">
+               <svg xmlns="http://www.w3.org/2000/svg" class="author-arrow-icon icon-left" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+               </svg>
+            </span>
+            <span onclick="plusSlides(1)">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="author-arrow-icon icon-right"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  >
+                  <path
+                     stroke-linecap="round"
+                     stroke-linejoin="round"
+                     d="M14 5l7 7m0 0l-7 7m7-7H3"
+                     />
+               </svg>
+            </span>
+          </div> 
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+            <a  href="#">View customers</a>
+        </div>
+    </section>
+
+    <!-- ------ signup section ----- -->
+    <section class="signup-section">
+       <div class="signup-container">
+        <h2>Ready to move your team to Zoho WorkDrive?</h2>
+
+        <a class="head-link" href="#">sign up for free</a>
+        <span>
+          
+        </span>
+       </div>
+    </section>
+
+    <!-- ------ footer section ----- -->
+    <section class="footer-section">
+      <div class="footer-container">
+        <div class="foot-img">
+          <img src="assets/workdrive-digest-banner.png" alt="">
+        </div>
+       
+          <div class="foot-link-1">
+            <h4>Add-ons</h4>
+            <ul>
+              <li><a href="#">Gmail</a> </li>
+               <li><a href="#">Microsoft</a></li>
+               <li><a href="#">Zapier integration</a></li>
+               <li><a href="#">Projects integration</a></li>
+            </ul>
+            <h4>Comparison</h4>
+            <ul>
+              <li><a href="#">Google Drive</a> </li>
+               <li><a href="#">Dropbox</a></li>
+               <li><a href="#">Box</a></li>
+              
+            </ul>
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="#">Features</a> </li>
+               <li><a href="#">Pricing</a></li>
+               <li><a href="#">Solutions</a></li>
+               <li><a href="#">Customer stories</a></li>
+               <li><a href="#">Contact Us</a></li>
+               <li><a href="#">GDPR complaince</a></li>
+               <li><a href="#">HIPAA compliance</a></li>
+               <li><a href="#">Referral program</a></li>
+               <li><a href="#">Schedule a Demo</a></li>
+            </ul>
+           
+          </div>
+          <div class="foot-link-1">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">Work as a Team</a> </li>
+               <li><a href="#">Admin Console</a></li>
+               <li><a href="#">Security</a></li>
+               <li><a href="#">External Sharing</a></li>
+               <li><a href="#">WorkDrive sync
+
+               </a></li>
+               <li><a href="#">WorkDrive TrueSync </a></li>
+               <li><a href="#">WorkDrive Genie</a></li>
+               <li><a href="#">Mobile Apps</a></li>
+               <li><a href="#">Data Templates</a></li>
+               <li><a href="#">Office Suite</a></li>
+               <li><a href="#">File Sharing</a></li>
+               <li><a href="#">File Storage</a></li>
+               <li><a href="#">Cloud Storage</a></li>
+               <li><a href="#">WorkDrive for remote teams</a></li>
+               <li><a href="#">Document Management Software</a></li>
+               
+            </ul>
+          </div>
+          <div class="foot-link-1">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">User Guide</a></li>
+               <li><a href="#">Community</a></li>
+               <li><a href="#">Webinar</a></li>
+               <li><a href="#">Digest</a></li>
+               <li><a href="#">What's New</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">FAQs</a></li>
+               <li><a href="#">Developer APIs</a></li>
+               <li><a href="#">How-to-videos</a></li>
+               <li><a href="#">Become a Partner</a></li>
+               
+            </ul>
+            <h4>Connect with us</h4>
+            <div class="sm"></div>
+           <img class="sm-icon" src="assets/icons8-twitter-36.png" alt="">
+           <img class="sm-icon" src="assets/icons8-facebook-36.png" alt="">
+           <img class="sm-icon"src="assets/icons8-instagram-48.png" alt="">
+           <img class="sm-icon linkedin-icon" src="assets/icons8-linkedin.png" alt="">
+           <img class="sm-icon"src="assets/icons8-youtube-36.png" alt="">
+           <img class="sm-icon" src="assets/icons8-pinterest-32.png" alt="">
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ------ footer ----- -->
+    <footer>
+      <div class="footer-nav">
+        <span><img src="assets/icons8-mail-24.png" alt=""> <a href="#">sales@zohocorp.com</a></span>
+        <span><svg xmlns="http://www.w3.org/2000/svg" class="global-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+        </svg><span > English</span></span>
+      </div>
+      <div class="hr"></div>
+      <div class="footer-search">
+        <input type="text" placeholder="Search for product overviews, FAQs, and more...">
+        <button><img src="assets/search-icon.png" alt=""></button>
+      </div>
+      <ul>
+      <li><a href="#">Zoho Home</a></li>
+        <li> <a href="#">Contact Us</a> </li>  
+     <li> <a href="#">Security</a></li>
+       <li> <a href="#">complaince</a> </li>
+       <li> <a href="#"> IPR Complaints</a> </li>
+        <li> <a href="#">Anti-spam Policy</a></li>
+        <li> <a href="#">Terms of Service</a></li>
+        <li> <a href="#">Privacy Policy</a></li> 
+       <li> <a href="#">Cookie Policy</a> </li>  
+     <li> <a href="#">GDPR complaince</a></li> 
+       <li> <a href="#">Abuse Policy</a></li> 
+     </ul>
+      <p class="copyright">© 2022, Zoho Corporation Pvt. Ltd. All Rights Reserved.</p>
+    </footer>
+   
+     
+  </body>
+</html>
